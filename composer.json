@@ -1,0 +1,8 @@
+{
+  "name": "rhlt/env",
+  "description": "A basic and efficient .env file parser, to load environment variables from a file. With flexible support for variable interpolation and graceful syntax errors handling.",
+  "license": "MIT",
+  "autoload": {
+    "files": ["env.php"]
+  }
+}

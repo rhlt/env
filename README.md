@@ -15,7 +15,7 @@ $credentials = [
 
 ## Example `.env` files
 Basic syntax:
-```env
+```
 API_USER=username
 API_PASSWORD=p@sswørd
 ```
