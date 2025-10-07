@@ -2,8 +2,10 @@
 This is a small PHP script that can parse and load .env files into environment variables. It is intended to be simpler and more efficient than existing library solutions.
 
 ## Basic usage
+Available via Composer (`composer require rhlt/env`), or by manually including `env.php`. It contains a single function `load_dontenv($path)`:
+
 ```php
-include 'env.php';
+include 'env.php'; // Include needed only when not using Composer
 load_dotenv('.env');
 
 // Use for whatever you need them, for example:
