@@ -5,10 +5,10 @@ This is a small PHP script that can parse and load .env files into environment v
 Available via Composer (`composer require rhlt/env`), or by manually including `env.php`. It contains a single function `load_dontenv($path)`:
 
 ```php
-include 'env.php'; // Include needed only when not using Composer
+include 'env.php'; // "include" is needed only when not using Composer
 load_dotenv('.env');
 
-// Use for whatever you need them, for example:
+// Now you can access them wherever, for example:
 $credentials = [
     'user' => getenv('API_USER'),
     'token' => getenv('API_TOKEN'), 
@@ -19,7 +19,7 @@ $credentials = [
 Basic syntax:
 ```
 API_USER=username
-API_PASSWORD=p@sswørd
+API_TOKEN=p@sswørd
 ```
 Additional examples:
 ```
