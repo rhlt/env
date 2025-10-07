@@ -1,5 +1,5 @@
 # Basic .env parser
-This is a small PHP script that can parse and load .env files into environment variables. It is intended to be simpler and more efficient than existing library solutions.
+This is a small PHP script that can parse and load .env files into environment variables. At only 5 KB, it is intended to be simpler and more efficient than existing library solutions.
 
 ## Basic usage
 Available via Composer (`composer require rhlt/env`), or by manually including `env.php`. It contains a single function `load_dontenv($path)`:
@@ -14,6 +14,8 @@ $credentials = [
     'token' => getenv('API_TOKEN'), 
 ];
 ```
+
+The idea is to keep sensitive or environment specific values in an `.env` file, which is not committed to source control. They are available in scripts through `getenv()` as well as through `$_ENV[]` and `$_SERVER[]`.
 
 ## Example `.env` files
 Basic syntax:
