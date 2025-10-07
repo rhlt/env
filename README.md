@@ -45,7 +45,7 @@ VAR14='The content of single ${QUOTES} is always untouched'
 
 Lines with invalid data will be ignored
 VAR15="Quoted value" this will be ignored
-VAR16='Leading quote is parsed and value is stored even if the final quote is missing # this is not a comment
+VAR16='Value is stored even if the final quote is missing # this is not a comment
 ```
 
 Syntax errors are handled as gracefully as possible. Note that all variables need to be a single line. Newlines must be entered as `\n` (or `\r\n` if desired) between "double quotes". The file encoding must be ASCII-compatible (such as UTF-8).
